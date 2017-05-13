@@ -1,0 +1,24 @@
+decl
+integer a[11], swap(integer &x,&y), funct(integer a,b);
+enddecl
+
+integer funct(integer a,b) {
+	decl
+	enddecl
+	begin
+	write(a);
+	write(b);
+	return 1;
+	end
+}
+
+integer main() {
+	decl
+	integer i,temp;
+	enddecl
+	begin
+	temp = funct(1,10);
+
+	return 1;
+	end
+}

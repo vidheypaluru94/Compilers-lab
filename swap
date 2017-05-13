@@ -1,0 +1,52 @@
+decl
+
+	integer swap(integer &x,&y),a[10];
+
+enddecl
+
+integer swap (integer &x,&y) {
+
+decl
+
+integer q;
+
+enddecl
+
+begin
+
+q = x;
+
+x = y;
+
+y = q;
+
+return 1;
+
+end
+}
+
+integer main() {
+decl
+	integer a, b,c,i;
+enddecl
+
+begin
+a = 10;
+b = 20;
+
+write (a);
+write (b);
+c = swap(&a,&b);
+write(a);
+write(b);
+i=1;
+a[1] = 100;
+a[2] = 200;
+write(a[1]);
+write(a[2]);
+c=swap(&a[i],&a[i+1]);
+write(a[1]);
+write(a[2]);
+return 1;
+end
+}

@@ -1,0 +1,3 @@
+cp ./output ../../sim-2/
+cd ../../sim-2/
+./sim output

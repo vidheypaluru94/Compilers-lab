@@ -1,0 +1,59 @@
+decl
+	integer addition (integer a, integer b);
+	boolean boo(integer a);
+	integer s;
+enddecl
+
+integer addition (integer a,integer b) {
+decl
+	integer sum;
+enddecl
+
+begin
+
+sum = a+b;
+
+return sum;
+end
+}
+
+boolean boo (integer a) {
+decl
+	boolean tr;
+enddecl
+
+begin
+
+if(a>10) then
+	tr = true;
+else
+	tr = false;
+endif;
+
+return tr;
+end
+}
+
+integer main() {
+decl 
+	integer a,b,sum;
+	boolean tru;
+enddecl
+
+begin
+
+a=10;
+b=20;
+sum = addition (a,true);
+tru = boo(10);
+if(tru) then
+	write(1);
+else
+	write(0);
+endif;
+write(sum);
+return 1;
+
+end
+
+}

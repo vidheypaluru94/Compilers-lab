@@ -1,0 +1,25 @@
+decl
+integer a[10],i,j,temp;
+boolean tr,pr;
+enddecl
+
+integer main() {
+decl
+enddecl
+begin
+i=0;
+while(i<10) do
+read(a[i]);
+i=i+1;
+endwhile;
+
+i=0;
+while(i<10) do
+	write(a[i]);
+	i=i+1;
+endwhile;
+
+return 1;
+
+end
+}

@@ -1,0 +1,44 @@
+decl
+integer a[10],i,j,temp;
+boolean tr,pr;
+enddecl
+
+integer main() {
+decl
+enddecl
+begin
+i=0;
+while(i<10) do
+a[i] = 10-i;
+i=i+1;
+endwhile;
+
+i=0;
+while(i<10) do
+	write(a[i]);
+	i=i+1;
+endwhile;
+
+i=0;
+j=0;
+while(i<10) do
+	while(j < 9) do
+		if(a[j] > a[j+1]) then
+			temp = a[j];
+			a[j] = a[j+1];
+			a[j+1] = temp;
+		endif;
+		j=j+1;
+	endwhile;
+	i=i+1;
+	j=0;
+endwhile;
+
+i=0;
+while(i<10) do
+	write(a[i]);
+	i=i+1;
+endwhile;
+return 1;
+end
+}

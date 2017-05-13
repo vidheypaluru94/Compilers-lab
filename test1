@@ -1,0 +1,12 @@
+decl
+integer x,y;
+enddecl
+
+integer main(){
+decl
+enddecl
+begin
+	write(1);
+	return 1;
+end
+}
